@@ -5,8 +5,8 @@ This library allows a user (or service account) to authenticate with Firestore a
 
 Read how this project was started [here](http://grahamearley.website/blog/2017/10/18/firestore-in-google-apps-script.html).
 
-## Installation
-In the Google online script editor, select the `Resources` menu item and choose `Libraries...`. In the "Add a library" input box, enter `1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw` and click "Add." Choose the most recent version number.
+## Installation (DOOMD FORK March 25 2020)
+In the Google online script editor, select the `Resources` menu item and choose `Libraries...`. In the "Add a library" input box, enter `1eYspHvBlx37akwhXhtBLdc_tnzlIFD_LFlCGMOPPqgFGdSkV9eZXQ6dk` and click "Add." Choose the most recent version number.
 
 
 ## Quick start
@@ -16,10 +16,10 @@ The easiest way to use this library is to create a Google Service Account for yo
 If you don't already have a Firestore project you want to use, create one at the [Firebase admin console](https://console.firebase.google.com).
 
 To make a service account,
-1. Open the [Google Service Accounts page by clicking here](https://console.developers.google.com/projectselector/iam-admin/serviceaccounts). 
-2. Select your Firestore project, and then click "Create Service Account." 
-3. For your service account's role, choose `Datastore > Cloud Datastore Owner`. 
-4. Check the "Furnish a new private key" box and select JSON as your key type. 
+1. Open the [Google Service Accounts page by clicking here](https://console.developers.google.com/projectselector/iam-admin/serviceaccounts).
+2. Select your Firestore project, and then click "Create Service Account."
+3. For your service account's role, choose `Datastore > Cloud Datastore Owner`.
+4. Check the "Furnish a new private key" box and select JSON as your key type.
 5. When you press "Create," your browser will download a `.json` file with your private key (`private_key`), service account email (`client_email`), and project ID (`project_id`). Copy these values into your Google Apps Script — you'll need them to authenticate with Firestore.
 
 #### Create a test document in Firestore from your script
@@ -77,11 +77,11 @@ See other library methods and details [in the wiki](https://github.com/grahamear
 
 ### Breaking Changes
 * v16: **Removed:** `createDocumentWithId(documentId, path, fields)`
-  > Utilize `createDocument(path + '/' + documentId, fields)` instead to create a document with a specific ID. 
+  > Utilize `createDocument(path + '/' + documentId, fields)` instead to create a document with a specific ID.
 
 ## Contributions
 Contributions are welcome — send a pull request! This library is a work in progress. See [here](https://github.com/grahamearley/FirestoreGoogleAppsScript/blob/master/CONTRIBUTING.md) for more information on contributing.
 
 After cloning this repository, you can push it to your own private copy of this Google Apps Script project to test it yourself. See [here](https://github.com/google/clasp) for directions on using `clasp` to develop App Scripts locally.
 
-If you want to view the source code directly on Google Apps Script, where you can make a copy for yourself to edit, click [here](https://script.google.com/d/1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw/edit?usp=sharing). 
+If you want to view the source code directly on Google Apps Script, where you can make a copy for yourself to edit, click [here](https://script.google.com/d/1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw/edit?usp=sharing).
