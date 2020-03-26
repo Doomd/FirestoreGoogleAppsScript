@@ -1,4 +1,5 @@
-# Firestore for Google Apps Scripts
+# Firestore for Google Apps Scripts (DOOMD'S FORK)
+>***DOOMD'S NOTE: THIS IS A FORK!*** I've created this fork out of necessity as the original author seems to be busy and not able to address some issues. This fork is almost entirely unaltered from the original except for some very minor corrections or bug fixes. I will also endevour to write more comprehensive documentation. The following script/library id (as mentioned in the "Installation" section below), is MINE (ie, this fork's), not the original's. You're welcome to use my version, but I offer NO warranties or support...That said, I do enjoy helping people...so, feel free to message me on [telegram](https://t.me/doomd) if you're stuck...*[FSM](https://www.spaghettimonster.org/) knows I've had my fair share of problems figuring out this library.*
 ### A Google Apps Script library for accessing Google Cloud Firestore.
 
 This library allows a user (or service account) to authenticate with Firestore and edit their Firestore database within a Google Apps Script.
