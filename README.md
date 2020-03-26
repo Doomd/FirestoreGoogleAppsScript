@@ -7,7 +7,11 @@ This library allows a user (or service account) to authenticate with Firestore a
 Read how this project was started [here](http://grahamearley.website/blog/2017/10/18/firestore-in-google-apps-script.html).
 
 ## Installation (DOOMD FORK March 25 2020)
-In the Google online script editor, select the `Resources` menu item and choose `Libraries...`. In the "Add a library" input box, enter `1eYspHvBlx37akwhXhtBLdc_tnzlIFD_LFlCGMOPPqgFGdSkV9eZXQ6dk` and click "Add." Choose the most recent version number.
+In the Google online script editor, select the `Resources` menu item and choose `Libraries...`. In the "Add a library" input box, enter:
+```
+1eYspHvBlx37akwhXhtBLdc_tnzlIFD_LFlCGMOPPqgFGdSkV9eZXQ6dk
+```
+and click "Add." Choose the most recent version number.
 
 
 ## Quick start
