@@ -52,12 +52,17 @@ Alternatively, we can create the document in the `FirstCollection` collection ca
 ```javascript
 firestore.createDocument("FirstCollection/FirstDocument", data)
 ```
-
-To update the document at this location, we can use the `updateDocument` function:
+### Update a Document with no mask (default update behavior)
+To completely overwrite an existing document's contents (clear out all fields and values, and insert any new fields/values you include in the data object), we can use the `updateDocument` function with the (optional) FALSE parameter:
 ```javascript
-firestore.updateDocument("FirstCollection/FirstDocument", data)
+firestore.updateDocument("FirstCollection/FirstDocument", data, FALSE)
+firestore.updateDocument("FirstCollection/FirstDocument", data) // same result
 ```
-
+### Update a Document with a Mask
+To update the document with new fields or with new data (without overwriting any existing field values unless they are included in the update object) at this location, we can use the `updateDocument` function with the TRUE (Mask) parameter:
+```javascript
+firestore.updateDocument("FirstCollection/FirstDocument", data, TRUE)
+```
 **Note:** Although you can call `updateDocument` without using `createDocument` to create the document, any documents in your path will not be created and thus you can only access the document by using the path explicitly.
 
 You can retrieve your data by calling the `getDocument` function:
